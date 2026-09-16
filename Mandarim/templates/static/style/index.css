@@ -1,0 +1,408 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+  *.paragraphs {
+    font-size: larger;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  background-color:  #FFF8E7;
+}
+
+
+.principal {
+    background : 
+      radial-gradient(circle at  85% 20%, rgba(255, 211, 130, 0.35), transparent 28%) #B3261E;
+    height: 70px;
+    display: flex;
+}
+.flor {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  justify-content: right;
+}
+.titulo{
+  color: #FFF8E7;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.botao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px 45px;
+    color: rgb(245, 236, 236);
+    text-decoration: none;
+    margin-left: 570px;
+}
+
+
+.redes{
+    font-size: 30px;
+    right: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.botaoredes{
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: #ffffff;
+}
+.botaoredes:hover {
+    color: #151718;
+}
+.lanterna{
+    width: 60px;
+    height: 200px;
+    margin-top: -40px;
+    margin-left: 1260px;
+}
+.decoracao{
+    position: absolute;
+    margin-left: 1100px;
+    bottom: -60px;
+    width: 320px;
+    height: 190px;
+}
+.logo_container {
+  position: fixed;
+  bottom: -20px;
+  right: -5px;
+}
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.banner{
+  margin-top: -90px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#conteudo{
+    position: relative;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    padding: 10px 50px;
+    
+}
+.conteudo h1  {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -2.5px;
+}
+.conteudo h2 {
+  color: #B3261E;
+  line-height: 2.5;
+  font-weight: 700px; 
+}
+.conteudo p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+.botoes {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+  margin-left: 80px;
+}
+.botao_main{
+    background-color: #d89c2d;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px 65px;
+    color: #FFF8E7;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.521);
+}
+.botao_main:hover {
+    background-color: #B3261E;
+    color: #FFF8E7;
+}
+.botao_main:active {
+    background-color: #B3261E;
+    color: #FFF8E7;
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.336);
+}
+
+
+
+
+/* Área Cards*/
+.cards h1 {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.cards h2 {
+    margin-top: 230px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #B3261E;
+    font-weight: bolder
+    
+}
+.cards p {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+#paragraph {
+    text-align: center;
+}
+.bloco_cont {
+    display: flex;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    width: 1320px;
+}
+.area_cards {
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.card_conteudo {
+    width: 380px;
+    height: 640px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.219);
+    transition: 0.3s;
+}
+.card_conteudo:hover {
+    transform: translateY(-5px);
+}
+;.card_conteudo h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.card_conteudo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card_conteudo {
+    padding: 10px;
+    
+    text-align: left;
+    align-items: self-start;
+}
+.card_conteudo > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #f0b240b6;
+    color: #B3261E;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.card_conteudo:hover > a{
+    color: #000000;
+}
+.card_conteudo h3{
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+.card_conteudo li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+.card_conteudo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.botao_card1{
+    width: 330px;
+    background-color: #FFF8E7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #B3261E;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 110px;
+}
+.botao_card2{
+    width: 330px;
+    background-color: #FFF8E7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #B3261E;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.botao_card3 {
+    width: 330px;
+    background-color: #FFF8E7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #B3261E;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.decoracao2{
+    position: absolute;
+    bottom: -430px;
+    margin-left: -130px;
+    width: 300px;
+    height: 180px;
+    z-index: 0;
+    pointer-events: none;
+}
+.flor3 {
+  margin-left: 600px;
+}
+
+/* Doação */
+.sobre h1{
+  margin-left: 550px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.sobre h2{
+  font-size: 30px;
+  margin-left: 500px;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+.doar { 
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 610px;
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+  border: 2px solid #263346; 
+  border-radius: 30px; 
+  padding: 12px 40px; 
+  font-size: 20px; 
+}
+.sobre p{
+    display: inline-block;
+    margin-top: -80px;
+    margin-left: 210px;
+    text-align: center;
+}
+.conteudo {
+    font-size: larger;
+    margin-top: 50px;
+}
+
+
+
+/* Área Footer */
+.footer {
+  background : 
+      radial-gradient(circle at  95% 20%, rgba(255, 211, 130, 0.35), transparent 45%) #B3261E;
+  
+
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  text-align: center;
+    
+}
+.footer h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    margin-top: 20px;
+}
+
+.redes2{
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    align-items: center;
+}
+.botredes{
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: #ffffff;
+}
+.botredes:hover {
+    color: #151718;
+}
+.flor2 { 
+  width: 75px; 
+  height: auto; 
+  margin-bottom: 15px; 
+}
+.relatar { 
+  color: white; 
+  text-decoration: none; 
+  border: 2px solid #263346; 
+  border-radius: 30px; 
+  padding: 12px 40px; 
+  font-size: 20px; 
+  margin-bottom: 65px; 
+}
+.footer p { 
+  font-size: 20px; 
+}
+}
